@@ -1,9 +1,13 @@
 var React = require('react');
 
-var App = React.createClass({
-	render() {
-		return <h1>This is my own React dev starter kit :)</h1>;
-	}
-})
+var Counter = React.createClass({
 
-React.render(<App/>, document.getElementById('example'));
+	render: function () {
+		return (
+			<div>this will be the incrementor</div>
+		);
+	}
+
+});
+
+React.render(<Counter/>, document.getElementById('counter-mount'));
